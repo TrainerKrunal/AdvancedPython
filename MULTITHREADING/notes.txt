@@ -1,0 +1,14 @@
+Multithreading - Theory Notes
+============================
+
+What is Multithreading?
+-----------------------
+Multithreading allows a program to run multiple threads (smaller units of a process) concurrently, enabling better utilization of CPU and improved performance for I/O-bound tasks.
+
+Key Concepts:
+- Thread: Smallest unit of a process that can run independently.
+- Race Condition: When threads access shared data simultaneously, leading to unpredictable results.
+- Lock: A synchronization mechanism to prevent race conditions.
+- Synchronization: Coordinating threads to ensure correct results.
+
+Use Case: Handling multiple bank transactions or requests at the same time.

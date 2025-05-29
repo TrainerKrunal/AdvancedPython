@@ -1,0 +1,31 @@
+{#
+  Jinja2 Template: advance.html
+  ----------------------------
+  This template demonstrates advanced Jinja2 features:
+  - Template inheritance (extends layout.html)
+  - Blocks for content injection
+  - Variable substitution ({{ ... }})
+  - Loops and conditionals
+  - Filters (capitalize)
+
+  How to explain to participants:
+  1. {% extends 'layout.html' %} means this template inherits the structure from layout.html and only fills in the 'content' block.
+  2. {% block content %} ... {% endblock %} defines a section that replaces the corresponding block in the base template.
+  3. {{ customer.name }} and {{ customer.balance }} insert dynamic data from the Python script.
+  4. {% for txn in transactions %} ... {% endfor %} loops through each transaction and displays its details.
+  5. {{ txn.type|capitalize }} uses the 'capitalize' filter to make the transaction type start with a capital letter.
+  6. {% if txn.amount > 1000 %} ... {% endif %} conditionally adds a note for large transactions.
+#}
+{% extends 'layout.html' %}
+{% block content %}
+  <h2>Account Holder: {{ customer.name }}</h2>
+  <h3>Transactions:</h3>
+  <ul>
+    {% for txn in transactions %}
+      <li>{{ txn.date }} - {{ txn.type|capitalize }}: {{ txn.amount }}
+        {% if txn.amount > 1000 %}(Large Transaction){% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  <p>Total Balance: {{ customer.balance }}</p>
+{% endblock %}

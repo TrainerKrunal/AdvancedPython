@@ -1,0 +1,21 @@
+
+{#
+  Jinja2 Base Template: layout.html
+  -------------------------------
+  This template provides the basic HTML structure for all pages that extend it.
+  - {{ title }}: Inserts the value of the 'title' variable from Python.
+  - {% block content %}{% endblock %}: Defines a block that child templates can override to inject their own content.
+  - The rest is standard HTML structure.
+
+  How to explain to participants:
+  1. layout.html is the base template for your site or app.
+  2. Child templates use {% extends 'layout.html' %} to inherit this structure.
+  3. The {% block content %} ... {% endblock %} section is replaced by child templates.
+#}
+<html>
+  <head><title>{{ title }}</title></head>
+  <body>
+    <h1>{{ title }}</h1>
+    {% block content %}{% endblock %}
+  </body>
+</html>

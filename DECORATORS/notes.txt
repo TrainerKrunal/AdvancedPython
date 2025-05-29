@@ -1,0 +1,13 @@
+Decorators - Theory Notes
+=========================
+
+What are Decorators?
+--------------------
+Decorators are functions that modify the behavior of other functions or methods. They are often used for logging, access control, timing, and more.
+
+Key Concepts:
+- @decorator: Syntax to apply a decorator to a function.
+- Wrapper Function: The function returned by a decorator that adds extra behavior.
+- Chaining: Multiple decorators can be applied to a single function.
+
+Use Case: Logging access to sensitive banking operations, checking user permissions, or timing function execution.

@@ -1,0 +1,16 @@
+Jinja2 - Theory Notes
+=====================
+
+What is Jinja2?
+---------------
+Jinja2 is a powerful templating engine for Python, used to generate dynamic text files (like HTML, XML, or plain text) by combining static templates with dynamic data.
+
+Key Concepts:
+- Template: A file or string with placeholders for dynamic content.
+- Variables: Data injected into templates (e.g., {{ name }}).
+- Control Structures: Loops and conditionals in templates ({% for ... %}, {% if ... %}).
+- Template Inheritance: Reusing and extending base templates.
+- Filters: Functions to modify variables in templates (e.g., {{ name|upper }}).
+- Rendering: The process of combining a template with data to produce the final output.
+
+Use Case: Generating dynamic HTML for web apps (e.g., displaying customer lists, statements).

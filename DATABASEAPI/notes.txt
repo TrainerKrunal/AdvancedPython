@@ -1,0 +1,15 @@
+Database API (DB-API) - Theory Notes
+====================================
+
+What is Python DB-API?
+----------------------
+Python DB-API is a standard interface for connecting to relational databases (like SQLite, MySQL, PostgreSQL) from Python.
+
+Key Concepts:
+- Connection: Link between Python and the database.
+- Cursor: Executes SQL commands and fetches results.
+- SQL: Structured Query Language for managing data.
+- CRUD: Create, Read, Update, Delete operations.
+- Transactions: Group of operations executed as a single unit.
+
+Use Case: Storing and retrieving customer or transaction data in a bank application.

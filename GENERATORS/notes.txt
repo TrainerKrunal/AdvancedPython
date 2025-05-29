@@ -1,0 +1,13 @@
+Generators - Theory Notes
+=========================
+
+What are Generators?
+--------------------
+Generators are a way to create iterators in Python using functions and the 'yield' keyword. They allow you to iterate over large data sets efficiently, generating items one at a time.
+
+Key Concepts:
+- yield: Pauses the function and returns a value, resuming where it left off.
+- Iterator: An object that can be iterated (looped) upon.
+- Lazy Evaluation: Values are produced only when needed, saving memory.
+
+Use Case: Processing large transaction logs or streaming data without loading everything into memory.
