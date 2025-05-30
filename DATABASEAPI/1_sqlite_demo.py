@@ -26,18 +26,34 @@ conn = sqlite3.connect('bank.db')
 # Create a cursor object to execute SQL commands
 cur = conn.cursor()
 
-# Create a table
+
+
+# Delete the table if it exists, then create a new one
+cur.execute('DROP TABLE IF EXISTS customers')
 cur.execute('''
-CREATE TABLE IF NOT EXISTS customers (
+CREATE TABLE customers (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
+    email TEXT UNIQUE,
     balance REAL NOT NULL
 )
 ''')
 
-# Insert some data
-cur.execute("INSERT INTO customers (name, balance) VALUES (?, ?)", ("Alice", 1200.0))
-cur.execute("INSERT INTO customers (name, balance) VALUES (?, ?)", ("Bob", 1500.0))
+# Insert some data (with email)
+cur.execute("INSERT INTO customers (name, email, balance) VALUES (?, ?, ?)", ("Alice", "alice@example.com", 1200.0))
+cur.execute("INSERT INTO customers (name, email, balance) VALUES (?, ?, ?)", ("Bob", "bob@example.com", 1500.0))
+# Function to delete a customer by email, with existence check
+def delete_customer_by_email(email):
+    cur.execute("SELECT 1 FROM customers WHERE email = ?", (email,))
+    if cur.fetchone() is None:
+        print(f"Error: No customer found with email {email}")
+        return
+    cur.execute("DELETE FROM customers WHERE email = ?", (email,))
+    conn.commit()
+    print(f"Customer with email {email} deleted.")
+
+# Example usage: delete Bob by email
+delete_customer_by_email("bob@example.com")
 conn.commit()
 
 # Query the data

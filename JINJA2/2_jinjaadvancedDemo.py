@@ -39,8 +39,9 @@ transactions = [
 ]
 
 
-# Now use advance.html as the template
-template = env.get_template('advance.html')
+
+# Now use statement.html as the template
+template = env.get_template('statement.html')
 rendered_html = template.render(title="Bank Statement", customer=customer, transactions=transactions)
 
 # Save the rendered HTML to a file for easy viewing in a browser

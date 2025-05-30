@@ -50,8 +50,8 @@ class BankLedger:
         self._accounts[index] = value
 
     def __iter__(self):
-        # Allows iteration over accounts
-        return iter(self._accounts)
+    # Iterates over accounts, yielding the holder's name in uppercase
+        return (account.holder.upper() for account in self._accounts)
 
     def __contains__(self, account):
         # Allows use of 'in' to check if an account exists
