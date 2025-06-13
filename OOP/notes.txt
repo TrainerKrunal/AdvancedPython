@@ -1,0 +1,20 @@
+OOP (Object-Oriented Programming) - Theory Notes
+===============================================
+
+What is OOP?
+-------------
+OOP is a programming paradigm based on the concept of "objects", which can contain data (attributes) and code (methods). It helps organize code, promote reuse, and model real-world entities.
+
+Key Concepts:
+- Class: Blueprint for creating objects.
+- Object: An instance of a class.
+- Inheritance: Mechanism to create a new class from an existing class, inheriting its attributes and methods.
+- Encapsulation: Bundling data and methods that operate on that data within one unit (class), and restricting access to some components.
+- Abstraction: Hiding complex implementation details and showing only the necessary features.
+- Polymorphism: Ability to use a common interface for different data types.
+- Method Resolution Order (MRO): The order in which Python looks for a method in a hierarchy of classes (important in multiple inheritance).
+- Static Variable: A variable shared by all instances of a class (class variable).
+- Instance Variable: A variable unique to each instance (object) of a class.
+- Property Decorators: Used to manage attribute access (getter/setter).
+
+Real-world Example: Bank Account, Customer, Transaction classes.

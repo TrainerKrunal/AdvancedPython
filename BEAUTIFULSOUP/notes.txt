@@ -1,0 +1,14 @@
+BeautifulSoup - Theory Notes
+===========================
+
+What is BeautifulSoup?
+----------------------
+BeautifulSoup is a Python library for parsing HTML and XML documents, making it easy to extract data from web pages.
+
+Key Concepts:
+- Parsing: Reading and analyzing HTML/XML structure.
+- Tag: An element in HTML (e.g., <div>, <a>).
+- Navigating: Finding elements by tag, class, id, etc.
+- Extracting Data: Getting text or attribute values from elements.
+
+Use Case: Scraping data from web pages (e.g., extracting customer names from a bank's online directory).

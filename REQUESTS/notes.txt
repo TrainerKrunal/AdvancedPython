@@ -1,0 +1,15 @@
+Requests Library - Theory Notes
+==============================
+
+What is the Requests Library?
+----------------------------
+Requests is a popular Python library for making HTTP requests to communicate with web services and APIs.
+
+Key Concepts:
+- HTTP Methods: GET (retrieve data), POST (send data), PUT, DELETE, etc.
+- Request: Sending data to a server.
+- Response: Receiving data from a server.
+- Status Codes: Indicate the result of an HTTP request (e.g., 200 OK, 404 Not Found).
+- JSON: Common data format for APIs.
+
+Use Case: Fetching data from or sending data to external APIs (e.g., getting exchange rates, posting transactions).

@@ -1,0 +1,16 @@
+Flask REST API - Theory Notes
+============================
+
+What is Flask?
+--------------
+Flask is a lightweight Python web framework for building web applications and REST APIs.
+
+Key Concepts:
+- REST API: An interface for communication between systems using HTTP methods.
+- Endpoint: A URL path that responds to HTTP requests.
+- Route: Mapping a URL to a Python function.
+- Methods: GET (retrieve), POST (create), PUT (update), DELETE (remove).
+- JSON: Data format for API communication.
+- Request/Response: Data sent to and from the API.
+
+Use Case: Exposing customer or transaction data to other systems or frontends.
