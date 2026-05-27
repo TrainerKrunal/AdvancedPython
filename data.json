@@ -1,0 +1,10 @@
+{
+    "name": "Krunal",
+    "age": 40,
+    "skills": [
+        "Python",
+        "Azure",
+        "DevOps"
+    ],
+    "isSalaried": true
+}
