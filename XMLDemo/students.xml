@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<students>
+    <student id="101">
+        <name>Krunal</name>
+        <course>Python</course>
+        <city>Ahmedabad</city>
+    </student>
+
+    <student id="102">
+        <name>Rushit</name>
+        <course>Azure AI</course>
+        <city>Mumbai</city>
+    </student>
+</students>
